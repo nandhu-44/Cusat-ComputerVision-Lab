@@ -103,8 +103,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--image', '-i', default='../images/pedestrian-detection.jpg')
     parser.add_argument('--model', '-m', default='../models/hog_svm_model.joblib')
-    parser.add_argument('--threshold', '-t', type=float, default=0.0)
-    parser.add_argument('--step', type=int, default=8)
+    parser.add_argument('--threshold', '-t', type=float, default=2.0, help='Decision score threshold (higher => fewer detections)')
+    parser.add_argument('--step', type=int, default=16, help='Sliding window step size (larger => fewer windows)')
     parser.add_argument('--visualize', action='store_true')
     args = parser.parse_args()
 
