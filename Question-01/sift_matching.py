@@ -151,8 +151,8 @@ def sift_match_beautiful(img1_path, img2_path, min_match_count=10, output_file=N
 if __name__ == "__main__":
 
     # Change these paths
-    path1 = "images/sift-image-1.jpeg"
-    path2 = "images/sift-image-2.jpeg"
+    path1 = "../images/sift-image-1.jpeg"
+    path2 = "../images/sift-image-2.jpeg"
 
     try:
         sift_match_beautiful(path1, path2, min_match_count=12, output_file='sift_matching_results.txt')
